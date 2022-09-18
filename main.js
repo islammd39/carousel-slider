@@ -10,12 +10,14 @@ const images = [
     'images/slide-8.jpg',
     'images/slide-9.jpg',
 ]
-let indexOfImages = 0
+let indexOfImages = 0;
+const img = document.getElementById('carousel-img')
 setInterval(() => {
     if(indexOfImages === images.length){
         indexOfImages = 0;
     }
     const slide = images[indexOfImages]
+    img.setAttribute('src', slide)
     console.log(slide);
     indexOfImages ++;
 }, 2000);
