@@ -191,3 +191,10 @@ const twoStudent = new Data('adnan', 'Four', 'B', 2, 10, 'Rofic')
 //   document.getElementById("show-time").innerHTML = `${total} seconds`;
 //   console.log(startTime ? timeSpent : 0);
 // }, 1000);
+
+const numbers = [23,58,474,14,25,63,989,74]
+// numbers.forEach(num => console.log(num))
+const jogor = numbers.map(num => num * 2)
+// console.log(jogor);
+const filtering = numbers.filter(num => num < 63)
+// console.log(filtering);
